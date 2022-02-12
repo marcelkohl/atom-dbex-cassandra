@@ -1,0 +1,77 @@
+@fa-font-path: "atom://atom-dbex-mariadb/iconsets";
+
+@font-face {
+    font-family: 'atom-dbex-mariadb';
+    // Font icons can be generated at https://www.glyphter.com/
+    src: url('@{fa-font-path}/mariadb-engine-font.woff') format('woff');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mariadb-struct: '\f121';
+@custom-mariadb: '\0041';
+@mariadb-view: '\0042';
+@mariadb-function: '\0043';
+@mariadb-procedure: '\0043';
+@mariadb-trigger: '\0044';
+@mariadb-event: '\0045';
+@custom-mariadb-color: #bb796a;
+@mariadb-view-color: #ffd54f;
+@mariadb-function-color: #4dd0e1;
+@mariadb-procedure-color: #ff7043;
+@mariadb-trigger-color: #f48fb1;
+@mariadb-event-color: #ce93d8;
+
+.custom-icon(@name) {
+  font-family: 'atom-dbex-mariadb';
+  content: @@name;
+}
+
+.custom-icon-colored(@name) {
+  .custom-icon(@name);
+  @color: "@{name}-color";
+  color: @@color;
+}
+
+.dbex-icon-fontawesome(@name) {
+  font-family: 'FontAwesome';
+  content: @@name;
+}
+
+.dbex {
+  .mariadb-engine-icon::before {
+    .custom-icon-colored(custom-mariadb);
+  }
+
+  .mariadb-view::before {
+    .custom-icon-colored(mariadb-view);
+  }
+
+  .mariadb-function::before {
+    .custom-icon-colored(mariadb-function);
+  }
+
+  .mariadb-procedure::before {
+    .custom-icon-colored(mariadb-procedure);
+  }
+
+  .mariadb-trigger::before {
+    .custom-icon-colored(mariadb-trigger);
+  }
+
+  .mariadb-event::before {
+    .custom-icon-colored(mariadb-event);
+  }
+
+  .icon-struct::before {
+    .dbex-icon-fontawesome(mariadb-struct);
+  }
+
+  .mariadb-table-counter-detail > .tree-view-root .details {
+    background-color: #8e8e8ead;
+    padding: 0px 5px;
+    border-radius: 6px;
+    color: black;
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "main": "./lib/main",
+  "name": "atom-dbex-cassandra",
+  "version": "1.0.0",
+  "description": "Dbex Cassandra engine",
+  "keywords": [
+    "dbex",
+    "engine",
+    "database",
+    "cassandra",
+    "nosql"
+  ],
+  "repository": "https://github.com/marcelkohl/atom-dbex-cassandra",
+  "license": "GPLv3",
+  "engines": {
+    "atom": ">=1.45.0 <2.0.0"
+  },
+  "providedServices": {
+    "dbex": {
+      "versions": {
+        "1.0.0": "subscribePlugin"
+      }
+    }
+  },
+  "dependencies": {
+    "cassandra-driver": "^4.6.3",
+    "sql-prettier": "^0.1.12"
+  }
+}
