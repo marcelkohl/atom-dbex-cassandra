@@ -8,6 +8,12 @@
 
 STILL IN BETA, NOT USABLE
 
+## TODO
+
+- List Structure, Tables and fields
+- Query on Cassandra with results
+- Multiple connections to different sources
+
 ## References
 https://www.npmjs.com/package/cassandra-driver
 https://docs.datastax.com/en/developer/nodejs-driver/4.6/
