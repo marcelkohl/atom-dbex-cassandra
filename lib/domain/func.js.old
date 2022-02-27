@@ -9,14 +9,14 @@ class Func extends RoutineClass {
   }
 
   get iconClass() {
-    return 'mariadb-function';
+    return 'cassandra-function';
   }
 
   getFunctionsNode(databaseName, funcs) {
     return new TreeItem({
       label: 'Functions',
       name: databaseName + ".functions",
-      icon: 'mariadb-function',
+      icon: 'cassandra-function',
       children: funcs,
       details: funcs.length,
       collapsed: true,

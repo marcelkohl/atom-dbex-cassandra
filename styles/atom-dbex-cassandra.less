@@ -1,0 +1,77 @@
+@fa-font-path: "atom://atom-dbex-cassandra/iconsets";
+
+@font-face {
+    font-family: 'atom-dbex-cassandra';
+    // Font icons can be generated at https://www.glyphter.com/
+    src: url('@{fa-font-path}/cassandra-engine-font.woff') format('woff');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@cassandra-struct: '\f121';
+@custom-cassandra: '\0041';
+@cassandra-view: '\0042';
+@cassandra-function: '\0043';
+@cassandra-procedure: '\0043';
+@cassandra-trigger: '\0044';
+@cassandra-event: '\0045';
+@custom-cassandra-color: #0d88ae;
+@cassandra-view-color: #ffd54f;
+@cassandra-function-color: #4dd0e1;
+@cassandra-procedure-color: #ff7043;
+@cassandra-trigger-color: #f48fb1;
+@cassandra-event-color: #ce93d8;
+
+.custom-icon(@name) {
+  font-family: 'atom-dbex-cassandra';
+  content: @@name;
+}
+
+.custom-icon-colored(@name) {
+  .custom-icon(@name);
+  @color: "@{name}-color";
+  color: @@color;
+}
+
+.dbex-icon-fontawesome(@name) {
+  font-family: 'FontAwesome';
+  content: @@name;
+}
+
+.dbex {
+  .cassandra-engine-icon::before {
+    .custom-icon-colored(custom-cassandra);
+  }
+
+  .cassandra-view::before {
+    .custom-icon-colored(cassandra-view);
+  }
+
+  .cassandra-function::before {
+    .custom-icon-colored(cassandra-function);
+  }
+
+  .cassandra-procedure::before {
+    .custom-icon-colored(cassandra-procedure);
+  }
+
+  .cassandra-trigger::before {
+    .custom-icon-colored(cassandra-trigger);
+  }
+
+  .cassandra-event::before {
+    .custom-icon-colored(cassandra-event);
+  }
+
+  .icon-struct::before {
+    .dbex-icon-fontawesome(cassandra-struct);
+  }
+
+  .cassandra-table-counter-detail > .tree-view-root .details {
+    background-color: #8e8e8ead;
+    padding: 0px 5px;
+    border-radius: 6px;
+    color: black;
+  }
+}

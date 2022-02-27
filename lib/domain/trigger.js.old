@@ -14,7 +14,7 @@ class Trigger {
       results.push(new TreeItem({
         label: trigger,
         name: schema + "." + trigger,
-        icon: 'mariadb-trigger',
+        icon: 'cassandra-trigger',
         children: [],
         details: "",
         collapsed: true,

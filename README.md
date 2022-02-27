@@ -10,9 +10,12 @@ STILL IN BETA, NOT USABLE
 
 ## TODO
 
-- List Structure, Tables and fields
+- List types, functions
 - Query on Cassandra with results
 - Multiple connections to different sources
+
+## Copyrights
+[Eye Icon](https://www.svgrepo.com/svg/53299/eye) from [SVGrepo](https://www.svgrepo.com/)
 
 ## References
 https://www.npmjs.com/package/cassandra-driver
