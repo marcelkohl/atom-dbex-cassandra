@@ -10,9 +10,10 @@ STILL IN BETA, NOT USABLE
 
 ## TODO
 
-- List types, functions
-- Query on Cassandra with results
+- list views, views result
+- stop query
 - Multiple connections to different sources
+- identify quen connection is over an reconnect
 
 ## Copyrights
 [Eye Icon](https://www.svgrepo.com/svg/53299/eye) from [SVGrepo](https://www.svgrepo.com/)
