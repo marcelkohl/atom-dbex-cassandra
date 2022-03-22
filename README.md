@@ -10,10 +10,11 @@ STILL IN BETA, NOT USABLE
 
 ## TODO
 
-- list views, views result
+- describe table
 - stop query
 - Multiple connections to different sources
-- identify quen connection is over an reconnect
+- identify when connection is over an reconnect
+- list views, views result
 
 ## Copyrights
 [Eye Icon](https://www.svgrepo.com/svg/53299/eye) from [SVGrepo](https://www.svgrepo.com/)
