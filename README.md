@@ -15,7 +15,7 @@ This engine supports most of the basic aspects of a Cassandra connection includi
 - Double click on Table and Views shows a limited query;
 - Actions to show structures for tables functions and types;
 
-![Dbex Cassandra engine for Atom Editor](https://github.com/marcelkohl/atom-dbex-cassandra/blob/main/samples/atom-cassandra-engine.png?raw=true)
+![Dbex Cassandra engine for Atom Editor](https://github.com/marcelkohl/atom-dbex-cassandra/blob/master/samples/atom-cassandra-engine.png?raw=true)
 
 ## TODO
 
