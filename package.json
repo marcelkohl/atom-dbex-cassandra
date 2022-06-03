@@ -1,6 +1,6 @@
 {
   "main": "./lib/main",
-  "name": "atom-dbex-cassandra",
+  "name": "marcelkohl@atom-dbex-cassandra",
   "version": "1.0.3",
   "description": "Dbex Cassandra engine",
   "keywords": [
